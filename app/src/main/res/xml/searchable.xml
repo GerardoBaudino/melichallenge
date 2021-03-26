@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/search"
+    android:searchSuggestAuthority="movil.baudinogl.com.ar.melichallenge"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:searchSuggestIntentData="content://movil.baudinogl.com.ar.melichallenge"
+    android:voiceSearchMode="showVoiceSearchButton|launchRecognizer" />

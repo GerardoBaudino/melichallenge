@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.MaterialComponents.Light.DarkActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ui.activity.ProductPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/product_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:navigationIcon="?attr/homeAsUpIndicator"
+                app:title="@string/product" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <TextView
+            android:id="@+id/tv_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_app_bar"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:text="@string/condition"
+            android:textSize="@dimen/dim_14sp" />
+
+        <TextView
+            android:id="@+id/tv_product_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_condition"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:textSize="@dimen/dim_16sp"
+            android:textStyle="bold" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/niv_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_300dp"
+            android:layout_below="@+id/tv_product_title"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:background="?attr/colorPrimaryDark"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/niv_product"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:textSize="@dimen/dim_30sp" />
+
+        <TextView
+            android:id="@+id/tv_medios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_product_price"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:text="@string/payments"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_60dp"
+            android:layout_below="@+id/tv_medios"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:onClick="buy"
+            android:text="@string/buy_now" />
+
+        <TextView
+            android:id="@+id/tv_accepts_mercadopago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_buy"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_8dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:text="@string/accepts_mercadopago"
+            android:textSize="@dimen/dim_16sp" />
+
+        <TextView
+            android:id="@+id/tv_seller"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_accepts_mercadopago"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_24dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:text="@string/seller_detail"
+            android:textSize="@dimen/dim_16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ubication_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_seller"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:drawablePadding="@dimen/dim_4dp"
+            android:singleLine="true"
+            android:text="@string/ubication_title"
+            android:textSize="@dimen/dim_14sp"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_place" />
+
+        <TextView
+            android:id="@+id/tv_ubication_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ubication_title"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:singleLine="true"
+            android:textSize="@dimen/dim_14sp" />
+
+        <TextView
+            android:id="@+id/tv_seller_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ubication_detail"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:singleLine="true"
+            android:text="@string/seller_status"
+            android:textColor="@color/green"
+            android:textSize="@dimen/dim_14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_seller_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_seller_status"
+            android:layout_marginStart="@dimen/dim_16dp"
+            android:layout_marginTop="@dimen/dim_16dp"
+            android:layout_marginEnd="@dimen/dim_16dp"
+            android:layout_marginBottom="@dimen/dim_8dp"
+            android:autoLink="web"
+            android:singleLine="true"
+            android:text="@string/seller_detail_url"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dim_12sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

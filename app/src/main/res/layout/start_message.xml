@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dim_16dp"
+    android:layout_marginEnd="@dimen/dim_16dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/tv_message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/start_message"
+        android:textSize="@dimen/dim_26sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+</RelativeLayout>

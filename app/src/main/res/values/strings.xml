@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MELIChallenge</string>
+    <string name="search">Buscar en Mercado Libre</string>
+    <string name="empty" />
+    <string name="urlML">https://api.mercadolibre.com/sites/MLA/search?q=%1$s&amp;offset=%2$d</string>
+    <string name="searchError">Error al realizar la busqueda</string>
+    <string name="searchSize">%1$d resultados</string>
+    <string name="previous"><u>anterior</u></string>
+    <string name="following"><u>siguiente</u></string>
+    <string name="pag">Pag %1$d</string>
+    <string name="favorite_menu">favorite</string>
+    <string name="search_menu">search</string>
+    <string name="shopping_menu">shopping</string>
+    <string name="product">Producto</string>
+    <string name="favorite_menu_detail">Favoritos</string>
+    <string name="search_menu_detail">Buscar</string>
+    <string name="shopping_menu_detail">Comprar</string>
+    <string name="connection_error">!Parece que no hay internet!</string>
+    <string name="connection_detail_error">Revisa tu conexión para seguir navegando</string>
+    <string name="buy">Comprar!</string>
+    <string name="favorite">Marcar como Favorito</string>
+    <string name="shopping">Agregar al carrito</string>
+    <string name="condition">%1$s | %2$d vendidos</string>
+    <string name="payments">Ver los medios de pago</string>
+    <string name="buy_now">Comprar ahora</string>
+    <string name="accepts_mercadopago">Acepta Mercado Pago?: %1$s</string>
+    <string name="accepts">Si</string>
+    <string name="not_accepts">No</string>
+    <string name="seller_detail">Información sobre el vendedor</string>
+    <string name="ubication_title">Ubicación</string>
+    <string name="seller_status">MercadoLider %1$s</string>
+    <string name="seller_detail_url">Ver mas datos de este vendedor: %1$s</string>
+    <string name="start_message">Buscador de productos y listado de respuestas</string>
+</resources>

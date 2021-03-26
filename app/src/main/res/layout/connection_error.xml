@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_connection_error"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dim_16dp"
+    android:layout_marginEnd="@dimen/dim_16dp"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_connection_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/connection_error"
+        android:textSize="@dimen/dim_26sp"
+        android:textStyle="bold"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_connection_title"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dim_8dp"
+        android:gravity="center"
+        android:text="@string/connection_detail_error"
+        android:textSize="@dimen/dim_24sp"
+        tools:ignore="Autofill,LabelFor,TextFields" />
+
+</RelativeLayout>

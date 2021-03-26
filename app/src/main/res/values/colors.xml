@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- https://material.io/tools/color/ -->
+    <color name="colorPrimary">#FFE700</color>
+    <color name="colorPrimaryDark">#F9D002</color>
+    <color name="textColorPrimary">#504F4F</color>
+    <color name="colorAccent">#448AFF</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="green">#36BC27</color>
+</resources>
